@@ -96,8 +96,6 @@ class Solution:
             self.front += 1
             return self.queue[self.front - 1] 
                 
-
-
 # read the string text
 text = input()
 
@@ -113,7 +111,7 @@ for index in range(length_of_text):
     solution.enqueue_character(text[index])
 
 is_palindrome = True
-'''
+''' 
 pop the top character from stack
 dequeue the first character from queue
 compare both characters
@@ -124,7 +122,7 @@ for index in range(length_of_text):
         is_palindrome = False
 
 
-# finally print whether string text is palindrome or not.
+
 if is_palindrome:
     print("The word, " + text + ", is a palindrome.")
 else:
