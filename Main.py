@@ -127,3 +127,5 @@ for index in range(length_of_text):
 # finally print whether string text is palindrome or not.
 if is_palindrome:
     print("The word, " + text + ", is a palindrome.")
+else:
+ print("The word, " + text + ", is not a palindrome.")
