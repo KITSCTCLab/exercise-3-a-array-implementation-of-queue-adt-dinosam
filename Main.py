@@ -10,7 +10,7 @@ class Solution:
       """
 
     # Write your code here
-    def _init_(self, size):
+    def __init__(self, size):
         """Inits Solution with stack, queue, size, top, front and rear.
         Arguments:
           size: An integer to set the size of stack and queue.
@@ -96,6 +96,8 @@ class Solution:
             self.front += 1
             return self.queue[self.front - 1] 
                 
+
+
 # read the string text
 text = input()
 
@@ -111,7 +113,7 @@ for index in range(length_of_text):
     solution.enqueue_character(text[index])
 
 is_palindrome = True
-''' 
+'''
 pop the top character from stack
 dequeue the first character from queue
 compare both characters
@@ -122,8 +124,6 @@ for index in range(length_of_text):
         is_palindrome = False
 
 
-
+# finally print whether string text is palindrome or not.
 if is_palindrome:
     print("The word, " + text + ", is a palindrome.")
-else:
-    print("The word, " + text + ", is not a palindrome.")
